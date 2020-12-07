@@ -8,9 +8,11 @@ function sendMail(contactForm) {
     .then(
       function (response) {
         console.log("SUCCESS", response);
+        alert("THANK YOU FOR YOUR MESSAGE, I WILL GET BACK TO YOU SHORTLY");
       },
       function (error) {
         console.log("FAILED", error);
+        alert("SORRY YOUR MESSAGE DID NOT GO THROUGH!");
       }
     );
   return false; // To block from loading a new page
